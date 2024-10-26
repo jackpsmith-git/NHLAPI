@@ -11,7 +11,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\NHLAPI.WRAPPER\NHLAPI.WRAPPER.csproj" />
-    <ProjectReference Include="..\WRAPPER\NHLAPI.WRAPPER.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,15 +1,15 @@
-﻿namespace NHLAPI.WRAPPER.DTOS;
+﻿namespace NHLAPI.WRAPPER.DTOS.StatLeaders;
 
-public record WinsLeadersDto(
-    StatLeaderDto[] wins
-    )
+public record PointsLeadersDto(
+    StatLeaderDto[] points
+    ) : BaseDto
 {
     public override string ToString()
     {
         string output = string.Empty;
 
         int i = 1;
-        foreach (StatLeaderDto leader in wins)
+        foreach (StatLeaderDto leader in points)
         {
             output += $"{i}. {leader}";
             i++;

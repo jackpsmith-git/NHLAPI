@@ -2,7 +2,7 @@
 
 public record PlayerSpotlightDto(
     int playerId,
-    FirstNameDto name,
+    StringWrapperDto name,
     string playerSlug,
     string position,
     int sweaterNumber,
@@ -11,4 +11,4 @@ public record PlayerSpotlightDto(
     string teamTriCode,
     string teamlogo,
     int sortId
-    );
+    ) : BaseDto;

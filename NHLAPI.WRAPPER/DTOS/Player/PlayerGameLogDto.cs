@@ -4,4 +4,4 @@ public record PlayerGameLogDto(
     int seasonId,
     int gameTypeId,
     PlayerSeasonGameTypesDto[] playerStatsSeasons,
-    PlayerStatsGameDto[] gameLog);
+    PlayerStatsGameDto[] gameLog) : BaseDto;

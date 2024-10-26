@@ -1,19 +1,17 @@
-﻿using NHLAPI.WRAPPER.DTOS.Team;
-
-namespace NHLAPI.WRAPPER.DTOS;
+﻿namespace NHLAPI.WRAPPER.DTOS.StatLeaders;
 
 public record StatLeaderDto(
     int id,
-    FirstNameDto firstName,
-    LastNameDto lastName,
+    StringWrapperDto firstName,
+    StringWrapperDto lastName,
     int sweaterNumber,
     string headshot,
     string teamAbbrev,
-    TeamNameDto teamName,
+    StringWrapperDto teamName,
     string teamLogo,
     string position,
     int value
-    )
+    ) : BaseDto
 {
     public override string ToString() => $"{firstName} {lastName} ({teamAbbrev}) - {value} \n";
 }

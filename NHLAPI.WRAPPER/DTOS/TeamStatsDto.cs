@@ -1,4 +1,4 @@
-﻿namespace NHLAPI.WRAPPER.DTOS.Team;
+﻿namespace NHLAPI.WRAPPER.DTOS;
 
 public record TeamStatsDto(
     string conferenceAbbrev,
@@ -48,7 +48,7 @@ public record TeamStatsDto(
     int leagueSequence,
     int losses,
     int otLosses,
-    PlaceNameDto placeName,
+    StringWrapperDto placeName,
     float pointPctg,
     int points,
     float regulationPlusOtWinPctg,
@@ -71,16 +71,16 @@ public record TeamStatsDto(
     int shootoutWins,
     string streakCode,
     int streakCount,
-    TeamNameDto teamName,
-    TeamCommonNameDto teamCommonName,
-    TeamAbbrevDto teamAbbrev,
+    StringWrapperDto teamName,
+    StringWrapperDto teamCommonName,
+    StringWrapperDto teamAbbrev,
     string teamLogo,
     int ties,
     int waiversSequence,
     int wildcardSequence,
     float winPctg,
     int wins
-    )
+    ) : BaseDto
 {
     public override string ToString() => $"{teamName} - {points}";
 }

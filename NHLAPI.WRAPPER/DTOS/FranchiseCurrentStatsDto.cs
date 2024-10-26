@@ -5,4 +5,4 @@ public record FranchiseCurrentStatsDto(
     int gameType,
     SkaterDto[] skaters,
     GoalieDto[] goalies
-    );
+    ) : BaseDto;

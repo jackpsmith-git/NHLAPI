@@ -3,8 +3,8 @@
 public record SkaterDto(
     int playerId,
     string headshot,
-    FirstNameDto firstName,
-    LastNameDto lastName,
+    StringWrapperDto firstName,
+    StringWrapperDto lastName,
     string positionCode,
     int gamesPlayed,
     int goals,
@@ -21,4 +21,4 @@ public record SkaterDto(
     float avgTimeOnIcePerGame,
     float avgShiftsPerGame,
     float faceoffWinPctg
-    );
+    ) : BaseDto;

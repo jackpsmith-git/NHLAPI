@@ -1,17 +1,15 @@
-﻿using NHLAPI.WRAPPER.DTOS.Team;
-
-namespace NHLAPI.WRAPPER.DTOS.Player;
+﻿namespace NHLAPI.WRAPPER.DTOS.Player;
 
 public record PlayerInfoDto(
     int playerId,
     bool isActive,
     int currentTeamId,
     string currentTeamAbbrev,
-    FullTeamNameDto fullTeamName,
-    TeamCommonNameDto teamCommonName,
-    TeamPlaceNameWithPrepositionDto teamPlaceNameWithPreposition,
-    FirstNameDto firstName,
-    LastNameDto lastName,
+    StringWrapperDto fullTeamName,
+    StringWrapperDto teamCommonName,
+    StringWrapperDto teamPlaceNameWithPreposition,
+    StringWrapperDto firstName,
+    StringWrapperDto lastName,
     string teamLogo,
     int sweaterNumber,
     string position,
@@ -22,7 +20,7 @@ public record PlayerInfoDto(
     int weightInPounds,
     int weightInKilograms,
     string birthDate,
-    BirthCityDto birthCity,
+    StringWrapperDto birthCity,
     string birthCountry,
     string shootsCatches,
     DraftDetailsDto draftDetails,
@@ -37,7 +35,7 @@ public record PlayerInfoDto(
     PlayerStatsGameDto[] last5Games,
     AwardDto[] awards,
     PlayerDto[] currentTeamRoster
-    )
+    ) : BaseDto
 {
     public override string ToString()
     {

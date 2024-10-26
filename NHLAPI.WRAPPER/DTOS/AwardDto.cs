@@ -1,9 +1,9 @@
 ﻿namespace NHLAPI.WRAPPER.DTOS;
 
 public record AwardDto(
-    TrophyDto trophy,
+    StringWrapperDto trophy,
     SeasonStatsDto[] seasons
-    )
+    ) : BaseDto
 {
     public override string ToString()
     {

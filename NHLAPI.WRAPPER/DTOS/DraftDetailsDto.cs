@@ -5,7 +5,7 @@ public record DraftDetailsDto(
     string teamAbbrev,
     int round,
     int pickInRound,
-    int overallPick)
+    int overallPick) : BaseDto
 {
     public override string ToString()
     {

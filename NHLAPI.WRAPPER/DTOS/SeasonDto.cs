@@ -1,4 +1,6 @@
-﻿namespace NHLAPI.WRAPPER;
+﻿using NHLAPI.WRAPPER.DTOS;
+
+namespace NHLAPI.WRAPPER;
 
 public record SeasonDto(
     int id,
@@ -10,4 +12,4 @@ public record SeasonDto(
     string standingsStart,
     bool tiesInUse,
     bool wildcardInUse
-    );
+    ) : BaseDto;

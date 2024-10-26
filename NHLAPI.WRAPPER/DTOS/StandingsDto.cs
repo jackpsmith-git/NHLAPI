@@ -1,11 +1,9 @@
-﻿using NHLAPI.WRAPPER.DTOS.Team;
-
-namespace NHLAPI.WRAPPER.DTOS;
+﻿namespace NHLAPI.WRAPPER.DTOS;
 
 internal record StandingsDto(
     bool wildCardIndicator,
     TeamStatsDto[] standings
-    )
+    ) : BaseDto
 {
     public override string ToString()
     {

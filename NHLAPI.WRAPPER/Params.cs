@@ -8,7 +8,7 @@ public static class Params
         assists,
         points,
         wins,
-        losses
+        losses,
     }
 
     public enum GameType

@@ -1,10 +1,8 @@
-﻿using NHLAPI.WRAPPER.DTOS.Team;
-
-namespace NHLAPI.WRAPPER.DTOS.Player;
+﻿namespace NHLAPI.WRAPPER.DTOS.Player;
 
 public record PlayerStatsGameDto(
     int assists,
-    TeamCommonNameDto commonName,
+    StringWrapperDto commonName,
     string gameDate,
     int gameId,
     int gameTypeId,
@@ -12,7 +10,7 @@ public record PlayerStatsGameDto(
     int goals,
     string homeRoadFlag,
     string opponentAbbrev,
-    TeamCommonNameDto opponentCommonName,
+    StringWrapperDto opponentCommonName,
     int otGoals,
     int pim,
     int plusMinus,
@@ -25,4 +23,4 @@ public record PlayerStatsGameDto(
     int shots,
     string teamAbbrev,
     string toi
-    );
+    ) : BaseDto;

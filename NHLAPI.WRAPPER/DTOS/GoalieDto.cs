@@ -3,8 +3,8 @@
 public record GoalieDto(
     int playerId,
     string headshot,
-    FirstNameDto firstName,
-    LastNameDto lastName,
+    StringWrapperDto firstName,
+    StringWrapperDto lastName,
     int gamesPlayed,
     int gamesStarted,
     int wins,
@@ -22,4 +22,4 @@ public record GoalieDto(
     int points,
     int penaltMinutes,
     int timeOnIce
-    );
+    ) : BaseDto;

@@ -2,4 +2,4 @@
 
 public record PlayerSeasonGameTypesDto(
     int season,
-    int[] gameTypes);
+    int[] gameTypes) : BaseDto;

@@ -1,8 +1,8 @@
-﻿namespace NHLAPI.WRAPPER.DTOS;
+﻿namespace NHLAPI.WRAPPER.DTOS.StatLeaders;
 
 public record GoalsLeadersDto(
     StatLeaderDto[] goals
-    )
+    ) : BaseDto
 {
     public override string ToString()
     {

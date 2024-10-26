@@ -27,7 +27,7 @@ public record PlayerStatsSeasonDto(
     int shutouts,
     string timeOnIce,
     int wins
-    )
+    ) : BaseDto
 {
     public string ToString(bool isGoalie)
     {

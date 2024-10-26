@@ -11,7 +11,7 @@ public record SeasonStatsDto(
     int plusMinus,
     int points,
     int seasonId
-    )
+    ) : BaseDto
 {
     public override string ToString() => seasonId.ToString();
 }

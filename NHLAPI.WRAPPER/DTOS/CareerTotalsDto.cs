@@ -5,7 +5,7 @@ namespace NHLAPI.WRAPPER.DTOS;
 public record CareerTotalsDto(
     PlayerStatsSeasonDto regularSeason,
     PlayerStatsSeasonDto playoffs
-    )
+    ) : BaseDto
 {
     public string ToString(bool isGoalie)
     {
